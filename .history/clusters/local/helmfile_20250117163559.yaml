@@ -24,16 +24,13 @@ releases:
     namespace: todoapp
     chart: ../../charts/todoapp
     values:
-    - image:
-        repository: fadareak1/supermetrics-todo-app
-        tag: "1.0"
     - service:
         port: 80
     - postgres:
         username: myuser
         database: mydatabase
         password: mypassword
-        host: postgresql-postgresql
+        host: postgresql
 
 
 helmDefaults:

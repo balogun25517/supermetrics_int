@@ -33,7 +33,7 @@ releases:
         username: myuser
         database: mydatabase
         password: mypassword
-        host: postgresql-postgresql #review
+        host: postgresql #review
 
 
 helmDefaults:

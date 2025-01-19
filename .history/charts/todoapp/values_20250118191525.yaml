@@ -17,10 +17,4 @@ postgres:
   host: postgres
   db: mydatabase
 
-resources: 
-  requests:
-    memory: "3Gi"
-    cpu: "2"
-  limits:
-    memory: "4Gi"
-    cpu: "3"
+resources: {}

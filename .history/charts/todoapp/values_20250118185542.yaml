@@ -1,6 +1,6 @@
 replicaCount: 1
 
-livenessPort: 8080 # change liveliness port to 8080
+livenessPort: 80
 
 image:
   repository: todoapp
@@ -17,10 +17,4 @@ postgres:
   host: postgres
   db: mydatabase
 
-resources: 
-  requests:
-    memory: "3Gi"
-    cpu: "2"
-  limits:
-    memory: "4Gi"
-    cpu: "3"
+resources: {}

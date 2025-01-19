@@ -20,7 +20,7 @@ postgres:
 resources:  #Added Requests and Limits
   requests:
     memory: "3Gi"
-    cpu: "1"
+    cpu: "2"
   limits:
     memory: "4Gi"
-    cpu: "2"
+    cpu: "3"

@@ -9,7 +9,7 @@ spec:
   ports:
     - name: web
       port: {{ .Values.service.port }}
-      targetPort: 8080
+      targetPort: {{ .Values.service.targetPort }}
       protocol: TCP
   selector:
     app: {{ include "todo-app.name" . }}

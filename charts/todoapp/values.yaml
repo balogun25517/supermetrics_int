@@ -1,6 +1,6 @@
-replicaCount: 1
+replicaCount: 2 #Change replica count to 2 or more 
 
-livenessPort: 8080 # change liveliness port to 8080
+livenessPort: 8080 # change liveness port to 8080 instead of 80
 
 image:
   repository: todoapp

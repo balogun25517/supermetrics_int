@@ -25,15 +25,15 @@ releases:
     chart: ../../charts/todoapp
     values:
     - image:
-        repository: fadareak1/supermetrics-todo-app #Location of docker image
-        tag: "1.0"
+        repository: fadareak1/supermetrics-todo-app
+        tag: 1.0
     - service:
         port: 80
     - postgres:
         username: myuser
         database: mydatabase
         password: mypassword
-        host: postgresql-postgresql #review
+        host: postgresql
 
 
 helmDefaults:
@@ -42,4 +42,4 @@ helmDefaults:
   force: true
   atomic: true
   cleanupOnFail: true
-  kubeContext: kind-metrics
+  kubeContext: supermetrics

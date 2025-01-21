@@ -33,7 +33,7 @@ releases:
         username: myuser
         database: mydatabase
         password: mypassword
-        host: postgresql-postgresql #review
+        host: postgresql #review
 
 
 helmDefaults:
@@ -42,4 +42,4 @@ helmDefaults:
   force: true
   atomic: true
   cleanupOnFail: true
-  kubeContext: kind-metrics
+  kubeContext: supermetrics

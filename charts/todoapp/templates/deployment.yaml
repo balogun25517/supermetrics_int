@@ -12,7 +12,7 @@ spec:
   template:
     metadata:
       labels:
-        app: todo-app
+        app: {{ include "todo-app.name" . }} #No hardcoding of values
     spec:
       containers:
       - name: {{ .Chart.Name }}
@@ -20,7 +20,7 @@ spec:
         imagePullPolicy: {{ .Values.image.pullPolicy }}
         hostNetwork: true
         ports:
-        - containerPort: 8080
+        - containerPort: {{ .Values.service.port }} #Avoid hardcoding values
         livenessProbe:
           tcpSocket:
             port: {{ .Values.livenessPort }}

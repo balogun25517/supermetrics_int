@@ -1,6 +1,6 @@
-replicaCount: 2 #Change replica count to 2 or more 
+replicaCount: 1
 
-livenessPort: 8080 # change liveness port to 8080 instead of 80
+livenessPort: 8080 # change liveliness port to 8080
 
 image:
   repository: todoapp
@@ -10,7 +10,6 @@ image:
 service:
   type: ClusterIP
   port: 8080
-  targetPort: 8080 #Avoid hardcoding of values
 
 postgres:
   username: username
@@ -21,7 +20,7 @@ postgres:
 resources:  #Added Requests and Limits
   requests:
     memory: "3Gi"
-    cpu: "1"
+    cpu: "2"
   limits:
     memory: "4Gi"
-    cpu: "2"
+    cpu: "3"

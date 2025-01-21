@@ -42,4 +42,4 @@ helmDefaults:
   force: true
   atomic: true
   cleanupOnFail: true
-  kubeContext: supermetrics
+  kubeContext: kind-metrics
